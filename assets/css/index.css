@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    display: flex;
+    padding: 100px 200px;
+    background-color: rgb(114, 114, 34);
+    line-height: 1.5;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.infor {
+    width: 35%;
+}
+
+.infor h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.infor p {
+    font-size: 30px;
+}
+
+.my-image {
+    width: 65%;
+}
+
+.my-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 980px) {
+    main {
+        padding: 100px 20px;
+    }
+}
+
+
+}
+@media (max-width: 900px) {
+    main {
+        display: flex;
+        padding: 100px 50px;
+    }
+    
+    .infor {
+        width: 40%;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 690px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .infor {
+        width: 100%;
+    }
+    
+    .my-image {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
